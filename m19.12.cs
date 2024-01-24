@@ -3,7 +3,7 @@
 namespace Ex
 {
 
-    public class HelloWorld
+    class HelloWorld
     {
         double length;
         double width;
@@ -15,18 +15,18 @@ namespace Ex
         }
         public void Display()
         {
-            Console.WriteLine("lenth:{0}", length.ToString());
+            Console.WriteLine("lenth:{0}", length);
             Console.WriteLine("width:{0}", width);
 
         }
     }
-    public class ExMain
+    class ExMain
     {
-        public static void Main()
+        static void Main()
         {
             HelloWorld he = new HelloWorld();
+            he.Init();
             he.Display();
-            Console.ReadLine();
         }
     }
 }
